@@ -1,9 +1,3 @@
-# burger
-yoyoyo wassup yall! its me..
+# GYATTTTT
 
-##who
-###am
-I????
-
-
-I am u
+hi clyde
