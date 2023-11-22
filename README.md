@@ -1,3 +1,4 @@
+<body style="background-color:powderblue;">
 # yo im a cool person
 heres people saying, "Among Us"
 
