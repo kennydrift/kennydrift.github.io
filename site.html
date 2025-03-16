@@ -62,6 +62,30 @@
         .close-btn:hover {
             color: #ff0000;
         }
+        /* New box at the bottom */
+        .button-box {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6); /* Black transparent background */
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            z-index: 1;  /* Keeps this box above iframe */
+            display: flex;
+            justify-content: space-evenly;
+            width: 80%;
+        }
+        .button-box img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .button-box img:hover {
+            transform: scale(1.1); /* Scale the image when hovered */
+        }
     </style>
 </head>
 <body>
@@ -69,6 +93,12 @@
     <div class="info-box" id="infoBox">
         <button class="close-btn" onclick="closeBox()">X</button>
         <p>Made by <a href="https://github.com/kennydrift" target="_blank">kennydrift</a>, <a href="https://github.com/averagearcelux" target="_blank">averagearcelux</a>, and <a href="https://discord.com/users/698783285827993602" target="_blank">gnarpgnab</a></p>
+    </div>
+
+    <!-- New bottom box with image buttons -->
+    <div class="button-box">
+        <img src="button1.png" alt="Button 1" onclick="alert('Button 1 clicked!')">
+        <img src="button2.png" alt="Button 2" onclick="alert('Button 2 clicked!')">
     </div>
 
     <script>
