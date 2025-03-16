@@ -19,9 +19,13 @@
             width: 100vw;  /* Full viewport width */
             height: 100vh; /* Full viewport height */
             border: none;  /* No border */
+            position: fixed; /* Fixed positioning to stay behind everything else */
+            top: 0;
+            left: 0;
+            z-index: -1;  /* Keeps iframe behind other content */
         }
         .info-box {
-            position: absolute;
+            position: fixed;
             top: 20px;
             left: 50%;
             transform: translateX(-50%);
@@ -33,8 +37,8 @@
             font-family: Arial, sans-serif;
             color: white;
             font-weight: bold; /* Bold text */
-            display: block;
             max-width: 80%;
+            z-index: 1;  /* Ensures the info box stays above the iframe */
         }
         .info-box a {
             color: #00bfff;
@@ -52,6 +56,7 @@
             background: none;
             border: none;
             cursor: pointer;
+            z-index: 2;  /* Ensures the button stays on top */
         }
         .close-btn:hover {
             color: #ff0000;
@@ -59,7 +64,7 @@
     </style>
 </head>
 <body>
-    <iframe src="https://wmovies.xyz/home/B"></iframe>
+    <iframe src="https://bit.ly/4h9GsUB"></iframe>
     <div class="info-box" id="infoBox">
         <button class="close-btn" onclick="closeBox()">X</button>
         <p>Made by <a href="https://github.com/kennydrift" target="_blank">kennydrift</a>, <a href="https://github.com/averagearcelux" target="_blank">averagearcelux</a>, and <a href="https://discord.com/users/698783285827993602" target="_blank">gnarpgnab</a></p>
